@@ -8,4 +8,4 @@ desna_stran = 0
 for i in range(1, n):
     n -=1
     print(n*" ", i*"*" + desna_stran*"*")
-    desna_stran += 1
+    desna_stran += 1  #git commitam
