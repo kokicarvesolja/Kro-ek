@@ -19,5 +19,34 @@
 # [[1, 2, 3, 4], [2, 3, 4], [3, 4], [4], []]
 
 def razpolovi_seznam(seznam):
-    dolzina_prvega_seznama = int(len(seznam)/2)
+    dolzina_seznama = int(len(seznam)/2)
+    prvi_seznam =[]
+    drugi_seznam = []
+    for i in range(len(seznam)):
+        if i < dolzina_seznama:
+            prvi_seznam.append(seznam[i])
+        elif i >= dolzina_seznama:
+            drugi_seznam.append(seznam[i])
+    return prvi_seznam, drugi_seznam
     
+seznam_1 = [6 ,5, 4, 3, 2, 1]
+
+prva_groza, druga_groza = razpolovi_seznam(seznam_1) #seznam da na dva dela
+
+# print(prva_groza, druga_groza)
+
+negativa = [0, -1, -2] #tretji seznam
+
+
+def zdruzi_sezname (seznam): #sprejme en seznam seznamov in ga da v skupen seznam
+    skupen_seznam = []
+    for i in range(len(seznam)):
+       for j in range(len(seznam[i])):
+           skupen_seznam.append(seznam[i][j])
+    return skupen_seznam
+
+def porezani_podseznami (seznam):
+    podseznam = []
+    
+
+print(porezani_podseznami(seznam_1))
