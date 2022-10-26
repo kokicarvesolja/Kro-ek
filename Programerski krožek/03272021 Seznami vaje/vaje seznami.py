@@ -46,7 +46,11 @@ def zdruzi_sezname (seznam): #sprejme en seznam seznamov in ga da v skupen sezna
     return skupen_seznam
 
 def porezani_podseznami (seznam):
-    podseznam = []
-    
+    seznam_V = []
+    porezan_podseznam = []
+    for i in range(len(seznam)):
+        seznam_V.append(seznam[-1])
+        porezan_podseznam.insert(0, seznam_V)
+    return porezan_podseznam
 
 print(porezani_podseznami(seznam_1))

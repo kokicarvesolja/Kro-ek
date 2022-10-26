@@ -12,10 +12,9 @@ for i in range(dolzina):
 print(zmnozek_fakultete)
 
 dolzina_rezultata = str(zmnozek_fakultete)
-fakulteta = 0
 
-for i in range(1,len(dolzina_rezultata)):
-    vsota_stevil += int(dolzina_rezultata[fakulteta])
-    fakulteta += 1
+for i in range(len(dolzina_rezultata)):
+    vsota_stevil += int(dolzina_rezultata[i])
+
 
 print(vsota_stevil)
